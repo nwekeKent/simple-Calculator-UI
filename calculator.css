@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    font-family: 'Open Sans' , sans-serif;
+    background-color:whitesmoke;
+    
+    
+}
+
+.calculator{
+    width: 350px;
+    background-color:#02010A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+   
+.result{
+    height:60px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    color: #FEF9FF;
+    
+   
+}
+.history{
+    text-align: right;
+    padding-right: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.output{
+	text-align: right;
+	margin:0px 10px 10px 0px;
+    font-size: 25px;
+    padding-right: 20px;
+    
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 0 30px 15px;
+    padding: 10px 20px;
+    height: 400px;
+    grid-gap: 30px;
+    
+
+}
+
+.operator ,.number, .empty{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   border: none;
+   font-size: 20px;
+   font-weight: 500;
+   color: #FEF9FF
+}
+
+.operator{
+    background-color:#C52233;
+}
+.operator ,.number{
+    cursor: pointer;
+}
+
+.number, .empty{
+    background-color: #00A6A6;
+}
+
+.operator:active,.number:active, .empty:active{
+   font-size: 18px;
+   
+}
+.operator:focus,.number:focus, .empty:focus{
+    outline: none;
+    
+ }
+ .number:hover{
+     background-color: teal;
+ }
+
+ button:nth-child(17){
+     background-color: #02010A;
+ }
+
+ 
+
